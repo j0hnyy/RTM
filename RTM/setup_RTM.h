@@ -9,8 +9,7 @@
 	#include "WProgram.h"
 #endif
 
-// Audio
-int set_Audio(void);
+void set_RTC(void);
 
 #endif
 
