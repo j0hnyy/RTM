@@ -5,7 +5,7 @@
 			all non-arduino files created by visual micro and all visual studio project or solution files can be freely deleted and are not required to compile a sketch (do not delete your own code!).
 			note: debugger breakpoints are stored in '.sln' or '.asln' files, knowledge of last uploaded breakpoints is stored in the upload.vmps.xml file. Both files are required to continue a previous debug session without needing to compile and upload again
 	
-	Hardware: Adafruit Feather M0, Platform=samd, Package=adafruit
+	Hardware: Adafruit Circuit Playground Express, Platform=samd, Package=arduino
 */
 
 #if defined(_VMICRO_INTELLISENSE)
@@ -14,13 +14,14 @@
 #define _VSARDUINO_H_
 #define _VMDEBUG 1
 #define F_CPU 48000000L
-#define ARDUINO 10805
-#define ARDUINO_SAMD_FEATHER_M0
+#define ARDUINO 10804
+#define ARDUINO_SAMD_CIRCUITPLAYGROUND_EXPRESS
 #define ARDUINO_ARCH_SAMD
+#define CRYSTALLESS
 #define ARDUINO_SAMD_ZERO
 #define __SAMD21G18A__
 #define USB_VID 0x239A
-#define USB_PID 0x800B
+#define USB_PID 0x8018
 #define USBCON
 #define __cplusplus 201103L
 #define __ARM__
