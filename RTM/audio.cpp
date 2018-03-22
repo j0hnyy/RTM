@@ -12,7 +12,6 @@
 #define VS1053_CS       6     // VS1053 chip select pin (output)
 #define VS1053_DCS     10     // VS1053 Data/command select pin (output)
 #define CARDCS          5     // Card chip select pin
-// DREQ should be an Int pin *if possible* (not possible on 32u4)
 #define VS1053_DREQ     9     // VS1053 Data request, ideally an Interrupt pin
 
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ, CARDCS);
