@@ -10,7 +10,7 @@
 #endif
 
 // function prototypes
-int initAudio(void);	// initialize the audio module
+void initAudio(void);	// initialize the audio module
 
 void play_Track(char* track);	// play a track from the SD card with the name "track"
 

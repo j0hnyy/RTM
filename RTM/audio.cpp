@@ -15,26 +15,29 @@
 #define VS1053_DREQ     9     // VS1053 Data request, ideally an Interrupt pin
 
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ, CARDCS);
+boolean enable = true;
 
-int initAudio(void) {
+void initAudio(void) {
 	if (!musicPlayer.begin()) {
-		return -1;
+		enable = false;
 	}
 	musicPlayer.sineTest(0x44, 500);	    // Make a tone to indicate VS1053 is working
 	if (!SD.begin(CARDCS)) {
-		return -1;
+		enable = false;
 	}
 	// Set volume for left, right channels. lower numbers == louder volume!
 	musicPlayer.setVolume(10, 10);
 	musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
-
-	return 0;
 }
 
 void play_Track(char* track) {
-	musicPlayer.playFullFile(track);
+	if (enable) {
+		musicPlayer.playFullFile(track);
+	}
 }
 
 void set_volume(int volume) {
-	musicPlayer.setVolume(volume, volume);
+	if (enable) {
+		musicPlayer.setVolume(volume, volume);
+	}
 }
