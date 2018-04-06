@@ -4,7 +4,6 @@
 
 #include "setup_RTM.h"
 
-
-void set_RTM(void) {
+void set_RTC(void) {
 	return;
 }

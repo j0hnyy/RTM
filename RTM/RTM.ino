@@ -5,9 +5,14 @@
 */
 
 // the setup function runs once when you press reset or power the board
+#include "pwmShield.h"
+#include "audio.h"
 #include "setup_RTM.h"
 void setup() {
-	set_RTM();
+	//initAudio();
+	//play_Track("track002.mp3");
+	init_Pwm();
+	run_Pwm();
 }
 
 // the loop function runs over and over again until power down or reset

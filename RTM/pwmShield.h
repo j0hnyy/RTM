@@ -1,7 +1,7 @@
-// setup_RTM.h
+// pwmShield.h
 
-#ifndef _SETUP_RTM_h
-#define _SETUP_RTM_h
+#ifndef _PWMSHIELD_h
+#define _PWMSHIELD_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -9,7 +9,9 @@
 	#include "WProgram.h"
 #endif
 
-void set_RTC(void);
+void init_Pwm(void);
+
+void run_Pwm(void);
 
 #endif
 

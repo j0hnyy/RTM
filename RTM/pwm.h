@@ -1,7 +1,7 @@
-// setup_RTM.h
+// pwm.h
 
-#ifndef _SETUP_RTM_h
-#define _SETUP_RTM_h
+#ifndef _PWM_h
+#define _PWM_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -9,7 +9,8 @@
 	#include "WProgram.h"
 #endif
 
-void set_RTC(void);
+ // function prototypes
+ void init_Pwm(void);
 
 #endif
 
