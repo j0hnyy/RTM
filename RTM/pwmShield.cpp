@@ -8,14 +8,14 @@
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
-void init_Pwm(void) {
+void init_PWM(void) {
 	pwm.begin();
-	pwm.setPWMFreq(1000);
-	Wire.setClock(400000);
+	pwm.setPWMFreq(60);
+	Wire.setClock(100000);
 }
 
-void run_Pwm(void) {
-	pwm.setPin(0, 2000, false);
+void set_PWM(int Nr, int dutyCycle) {
+	pwm.setPin(Nr, 500, false);
 }
 
 

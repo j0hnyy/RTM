@@ -9,9 +9,9 @@
 	#include "WProgram.h"
 #endif
 
-void init_Pwm(void);
+void init_PWM(void);
 
-void run_Pwm(void);
+void set_PWM(int Nr, int dutyCycle);
 
 #endif
 
