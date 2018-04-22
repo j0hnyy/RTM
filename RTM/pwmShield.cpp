@@ -1,6 +1,6 @@
-// 
-// 
-// 
+// pwmShield.cpp
+// author: Jonas Frei
+// contains all functions related to the pwm board
 
 #include "pwmShield.h"
 #include <Wire.h>

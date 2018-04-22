@@ -1,14 +1,14 @@
-// 
-// 
-// 
+// tc3.cpp
+// author: Jonas Frei
+// contains functions to configure timer 3
 
 #include "tc3.h"
 
 #define CPU_HZ 48000000
 #define TIMER_PRESCALER_DIV 1024
 
-#define LED_PIN 13
-bool isLEDOn = false;
+void setTimerFrequency(int frequencyHz);
+void TC3_Handler();
 
 void setTimerFrequency(int frequencyHz) {
 	int compareValue = (CPU_HZ / (TIMER_PRESCALER_DIV * frequencyHz)) - 1;
@@ -53,16 +53,4 @@ void startTimer(int frequencyHz) {
 
 	TC->CTRLA.reg |= TC_CTRLA_ENABLE;
 	while (TC->STATUS.bit.SYNCBUSY == 1); // wait for sync
-}
-
-void TC3_Handler() {
-	TcCount16* TC = (TcCount16*)TC3;
-	// If this interrupt is due to the compare register matching the timer count
-	// we toggle the LED.
-	if (TC->INTFLAG.bit.MC0 == 1) {
-		TC->INTFLAG.bit.MC0 = 1;
-		// Write callback here!!!
-		digitalWrite(LED_PIN, isLEDOn);
-		isLEDOn = !isLEDOn;
-	}
 }

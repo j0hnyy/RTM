@@ -9,9 +9,8 @@
 	#include "WProgram.h"
 #endif
 
+// call this function to start the timer 3 with the desired frequency in Hz
 void startTimer(int frequencyHz);
-void setTimerFrequency(int frequencyHz);
-void TC3_Handler();
 
 #endif
 
