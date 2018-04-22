@@ -21,24 +21,30 @@
     <ClInclude Include="__vm\.RTM.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="setup_RTM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="audio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pwmShield.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="tc3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="setup_RTM.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="audio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pwmShield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tc3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="display.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

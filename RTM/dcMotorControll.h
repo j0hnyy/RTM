@@ -1,7 +1,7 @@
-// setup_RTM.h
+// dcMotorControll.h
 
-#ifndef _SETUP_RTM_h
-#define _SETUP_RTM_h
+#ifndef _DCMOTORCONTROLL_h
+#define _DCMOTORCONTROLL_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -9,7 +9,6 @@
 	#include "WProgram.h"
 #endif
 
-void set_RTC(void);
 
 #endif
 
