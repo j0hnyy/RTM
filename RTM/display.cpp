@@ -4,7 +4,7 @@
 
 #include "display.h"
 #include <Wire.h>
-#include <Time.h>
+#include <RTClib.h>
 
 
 void sendDataToDisp(int x, char* c1, char* c2, char* c3) {

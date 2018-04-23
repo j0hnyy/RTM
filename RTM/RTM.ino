@@ -5,8 +5,7 @@
 */
 
 // the setup function runs once when you press reset or power the board
-#include <Time.h>
-#include <TimeLib.h>
+#include <RTClib.h>
 #include <Wire.h>
 #include "display.h"
 #include "tc3.h"
@@ -24,7 +23,6 @@ void setup() {
 	play_Track("track002.mp3");
 	pinMode(LED_PIN, OUTPUT);
 	startTimer(10);
-	setTime(17, 36, 0, 1, 1, 2018);
 }
 
 // the loop function runs over and over again until power down or reset
