@@ -2,7 +2,7 @@
 // 
 // 
 
-#include "setup_RTM.h"
+#include "setup_RTC.h"
 #include <Wire.h>
 #include "RTClib.h"
 

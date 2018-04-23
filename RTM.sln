@@ -5,12 +5,6 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTM", "RTM\RTM.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTClib", "..\..\..\Documents\Arduino\libraries\RTClib\RTClib.vcxitems", "{55203817-CA95-49EA-9C36-682B361BD2EA}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SPI", "..\..\..\AppData\Local\arduino15\packages\adafruit\hardware\samd\1.0.22\libraries\SPI\SPI.vcxitems", "{03FD46EA-B3B8-4CE8-9777-D8D93FE9D4B7}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdFat", "..\..\..\Documents\Arduino\libraries\SdFat\SdFat.vcxitems", "{E4A01579-6C44-4E84-B8A2-9CBE3086B241}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86

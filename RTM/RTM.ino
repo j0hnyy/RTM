@@ -14,7 +14,7 @@
 #include "setup_LOGGER.h"
 #include <RTClib.h>
 #include "mediData.h"
-#include "setup_RTM.h"
+#include "setup_RTC.h"
 #include <stdio.h>
 #include <string.h>
 
