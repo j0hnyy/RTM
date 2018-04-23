@@ -24,9 +24,21 @@
     <ClInclude Include="setup_RTM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mediData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup_LOGGER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="setup_RTM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mediData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup_LOGGER.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
